@@ -19,7 +19,7 @@ public class MessageService {
             if(mr.existsByPostedBy(postedBy)){
                 Message message = new Message(postedBy, message_text, timePostedEpoch);
                 mr.save(message);
-                return message.getMessageId();
+                return message.getMessageId(); 
             }
             else
                 return -1;
